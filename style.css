@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #e7f1fb; /* light blue background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background-color: #d9ebfa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h2 {
+  font-weight: 600;
+  color: #1a4971;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #2b5d88;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #0d63a5;
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.container {
+  background: #f3faff; /* lighter blue container */
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  border: 1px solid #cfe4f7;
+}
+
+h1 {
+  font-size: 1.9rem;
+  color: #1a4971;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #486a8b;
+  margin-bottom: 1.8rem;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #aac9e8;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #0d63a5;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #0d63a5;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #094f84;
+}
+
+/* RESULT BOX */
+.result {
+  margin-top: 20px;
+  display: none;
+  background: #d9ebfa;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #b8d6f2;
+}
+
+.short-url {
+  color: #0d63a5;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 8px;
+  word-break: break-all;
+}
+
+.copy-btn {
+  background: #0d63a5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.copy-btn:hover {
+  background: #094f84;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #3e5871;
+  border-top: 1px solid #c2d8ef;
+  background-color: #d9ebfa;
+}

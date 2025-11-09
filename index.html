@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Shortly — URL Shortener</title>
+</head>
+<body>
+  <header>
+    <h2>🔗 Shortly</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Shorten Your URL</h1>
+      <p>Paste your long link below to create a simple, shareable short URL.</p>
+
+      <input type="url" id="longUrl" placeholder="Enter your long URL here..." />
+      <button onclick="shortenUrl()">Shorten URL</button>
+
+      <div class="result" id="result">
+        <a href="#" target="_blank" class="short-url" id="shortUrl"></a>
+        <button class="copy-btn" onclick="copyUrl()">Copy</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Shortly — All rights reserved.
+  </footer>
+</body>
+</html>
